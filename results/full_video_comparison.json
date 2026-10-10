@@ -1,0 +1,40 @@
+{
+  "video": "test_zjs.mp4",
+  "processed_frames": 7803,
+  "person_boxes": 66601,
+  "student_boxes": 51927,
+  "invigilator_boxes": 14674,
+  "roi_only": {
+    "confirmed_abnormal_boxes": 16258,
+    "confirmed_abnormal_frames": 7060,
+    "actual_fps": 12.409,
+    "by_class": {
+      "normal": 35669,
+      "raise_hand": 6481,
+      "head_turn": 946,
+      "pass_suspicious_item": 173,
+      "hand_under_table_look_down": 542,
+      "pick_suspicious_item": 1821,
+      "carry_phone": 1453,
+      "tear_paper": 332,
+      "student_standing": 4510
+    }
+  },
+  "hybrid_roi_pose": {
+    "confirmed_abnormal_boxes": 10715,
+    "confirmed_abnormal_frames": 5603,
+    "actual_fps": 8.198,
+    "by_class": {
+      "normal": 41212,
+      "raise_hand": 864,
+      "head_turn": 2909,
+      "pass_suspicious_item": 641,
+      "hand_under_table_look_down": 2384,
+      "pick_suspicious_item": 550,
+      "carry_phone": 142,
+      "tear_paper": 1110,
+      "student_standing": 2115
+    }
+  },
+  "notice": "The video has no frame-level or event-level ground truth. Counts describe model outputs, not accuracy."
+}

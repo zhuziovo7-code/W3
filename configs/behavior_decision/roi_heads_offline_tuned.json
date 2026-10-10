@@ -1,0 +1,65 @@
+{
+  "description": "Offline tuned ROI-head fusion config from cached first-3000-frame report.",
+  "cache_report": "outputs/reports/roi_heads_first3000.json",
+  "labels_csv": "data/annotations/corrected_detection_labels.csv",
+  "iou_threshold": 0.3,
+  "behavior_decision_config": {
+    "raise_hand": {
+      "pose_weight": 1.0,
+      "rule_weight": 0.0,
+      "image_weight": 0.0,
+      "fused_thr": 0.72,
+      "temporal_abnormal_n": 10
+    },
+    "head_turn": {
+      "pose_weight": 1.0,
+      "rule_weight": 0.0,
+      "image_weight": 0.0,
+      "fused_thr": 0.95,
+      "temporal_abnormal_n": 6
+    },
+    "pass_suspicious_item": {
+      "pose_weight": 1.0,
+      "rule_weight": 0.0,
+      "image_weight": 0.0,
+      "fused_thr": 0.6,
+      "temporal_abnormal_n": 6
+    },
+    "hand_under_table_look_down": {
+      "pose_weight": 0.95,
+      "rule_weight": 0.0,
+      "image_weight": 0.05,
+      "fused_thr": 0.75,
+      "temporal_abnormal_n": 8
+    },
+    "pick_suspicious_item": {
+      "pose_weight": 0.9,
+      "rule_weight": 0.0,
+      "image_weight": 0.1,
+      "fused_thr": 0.6,
+      "temporal_abnormal_n": 6
+    },
+    "carry_phone": {
+      "pose_weight": 0.85,
+      "rule_weight": 0.05,
+      "image_weight": 0.1,
+      "fused_thr": 0.85,
+      "temporal_abnormal_n": 8
+    },
+    "tear_paper": {
+      "pose_weight": 0.95,
+      "rule_weight": 0.0,
+      "image_weight": 0.05,
+      "fused_thr": 0.8,
+      "temporal_abnormal_n": 8
+    },
+    "student_standing": {
+      "pose_weight": 1.0,
+      "rule_weight": 0.0,
+      "image_weight": 0.0,
+      "fused_thr": 0.9,
+      "temporal_abnormal_n": 6
+    }
+  },
+  "temporal_recover_n": 12
+}

@@ -1,0 +1,20 @@
+{
+  "output": "models/behavior/rtm_roi_heads_fifth_original_plus_review_correctedx3.pt",
+  "behavior_best_balanced_acc": 0.9458737893535274,
+  "identity_best_balanced_acc": 0.9765006691304849,
+  "behavior_labels": [
+    "normal",
+    "raise_hand",
+    "head_turn",
+    "pass_suspicious_item",
+    "hand_under_table_look_down",
+    "pick_suspicious_item",
+    "carry_phone",
+    "tear_paper",
+    "student_standing"
+  ],
+  "identity_labels": [
+    "student",
+    "invigilator"
+  ]
+}

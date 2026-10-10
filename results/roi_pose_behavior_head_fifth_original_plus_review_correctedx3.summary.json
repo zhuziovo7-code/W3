@@ -1,0 +1,16 @@
+{
+  "output": "models/behavior/roi_pose_behavior_head_fifth_original_plus_review_correctedx3.pt",
+  "best_balanced_acc": 0.9744859478261199,
+  "num_params": 521327,
+  "labels": [
+    "normal",
+    "raise_hand",
+    "head_turn",
+    "pass_suspicious_item",
+    "hand_under_table_look_down",
+    "pick_suspicious_item",
+    "carry_phone",
+    "tear_paper",
+    "student_standing"
+  ]
+}

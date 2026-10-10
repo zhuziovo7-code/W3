@@ -1,0 +1,42 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+
+# IDE / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+~$*
+.~lock.*#
+
+# Private datasets and generated artifacts
+/data/
+/outputs/
+/outputs(zjs)/
+*.avi
+*.mp4
+*.mov
+*.mkv
+*.jpg
+*.jpeg
+*.png
+*.rar
+*.zip
+*.tar
+*.tar.gz
+*.jsonl
+
+# Model weights and feature caches
+*.pth
+*.pt
+*.onnx
+*.engine
+
+# Local secrets
+.env
+.env.*
+*.pem
+*.key

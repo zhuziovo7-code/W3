@@ -1,0 +1,58 @@
+{
+  "output": "outputs(zjs)/roi_image_augmentation/smoke/rtm_roi_heads_behavior_augmented.pt",
+  "base_checkpoint": "models/behavior/rtm_roi_heads_fifth_original_plus_review_correctedx3.pt",
+  "training_mode": "ROI image behavior head only",
+  "pose_used": false,
+  "identity_head_preserved": true,
+  "behavior_best_epoch": 32,
+  "behavior_best_balanced_acc": 0.9605056739529173,
+  "behavior_labels": [
+    "normal",
+    "raise_hand",
+    "head_turn",
+    "pass_suspicious_item",
+    "hand_under_table_look_down",
+    "pick_suspicious_item",
+    "carry_phone",
+    "tear_paper",
+    "student_standing"
+  ],
+  "train_samples": 26114,
+  "val_samples": 1642,
+  "train_augmentation": {
+    "copies": 1,
+    "seed": 42,
+    "flip_prob": 0.5,
+    "blur_prob": 0.2,
+    "noise_prob": 0.2,
+    "max_rotate_deg": 4.0,
+    "max_translate_frac": 0.03,
+    "scale": [
+      0.95,
+      1.05
+    ],
+    "brightness": [
+      0.85,
+      1.15
+    ],
+    "contrast": [
+      0.85,
+      1.15
+    ],
+    "saturation": [
+      0.85,
+      1.15
+    ]
+  },
+  "best_val_per_class_recall": {
+    "normal": 0.8720379146919431,
+    "raise_hand": 0.9738562091503268,
+    "head_turn": 0.9385964912280702,
+    "pass_suspicious_item": 0.9895833333333334,
+    "hand_under_table_look_down": 0.9705882352941176,
+    "pick_suspicious_item": 0.9731543624161074,
+    "carry_phone": 0.943127962085308,
+    "tear_paper": 0.9836065573770492,
+    "student_standing": 1.0
+  }
+}

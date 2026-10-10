@@ -1,0 +1,55 @@
+{
+  "streamId": "exam_room_001",
+  "sampleIntervalFrames": 6,
+  "drawMode": "NONE",
+  "enableWarnings": true,
+  "writeFrameResults": true,
+  "writeNormalObjects": false,
+  "flushEveryEvents": 1,
+  "behaviorDurationsSec": {
+    "raise_hand": 0.5,
+    "head_turn": 0.27,
+    "pass_suspicious_item": 0.4,
+    "hand_under_table_look_down": 0.2,
+    "pick_suspicious_item": 0.4,
+    "carry_phone": 0.6,
+    "tear_paper": 0.4,
+    "student_standing": 0.47,
+    "temporal_recover": 0.27
+  },
+  "warningDurationsSec": {
+    "warning_init": 10.0,
+    "student_count_drop": 3.0,
+    "invigilator_count_drop": 3.0,
+    "invigilator_gather": 1.5,
+    "group_head_turn": 0.6,
+    "long_head_turn": 5.0,
+    "group_raise_hand": 0.6,
+    "group_student_standing": 0.6,
+    "student_whisper": 2.0,
+    "invigilator_in_student_seat": 0.5,
+    "warning_tail_ignore": 6.0
+  },
+  "warningThresholds": {
+    "student_count_min_drop": 1,
+    "invigilator_count_min_drop": 1,
+    "gather_min_count": 2,
+    "gather_distance_ratio": 0.12,
+    "group_head_turn_min_count": 3,
+    "repeated_head_turn_alert_count": 5,
+    "group_raise_hand_min_count": 2,
+    "group_standing_min_count": 3,
+    "whisper_neighbor_ratio": 0.18,
+    "invigilator_seat_distance_ratio": 0.06,
+    "invigilator_seat_score_thr": 0.4,
+    "invigilator_seat_min_height_ratio": 0.23,
+    "invigilator_seat_height_ratio_thr": 0.32,
+    "invigilator_seat_min_history_sec": 10.0,
+    "invigilator_seat_recover_sec": 5.0,
+    "invigilator_seat_track_ids": []
+  },
+  "allowedBehaviorTrackIds": {
+    "carry_phone": [4],
+    "hand_under_table_look_down": [1, 3]
+  }
+}
